@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha's Collection - بیگز اور جیولری</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #fdf6f0;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 25px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ہیڈر */
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #f0e0d8;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #8b5a3c;
+            font-weight: 700;
+        }
+
+        .header p {
+            color: #888;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        /* پروڈکٹس سیکشن */
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .product-card {
+            background: #faf5f2;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+
+        .product-card .icon {
+            font-size: 48px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 14px;
+            color: #5a3d2e;
+            margin-bottom: 4px;
+        }
+
+        .product-card .price {
+            font-size: 16px;
+            font-weight: bold;
+            color: #b47b5a;
+        }
+
+        /* بٹنز */
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:active {
+            transform: translateY(0px);
+        }
+
+        .btn-easypaisa {
+            background: linear-gradient(145deg, #f4a900, #e09600);
+        }
+
+        .btn-easypaisa:hover {
+            background: linear-gradient(145deg, #fbb800, #d48a00);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(145deg, #25d366, #1da851);
+        }
+
+        .btn-whatsapp:hover {
+            background: linear-gradient(145deg, #30e07a, #1a9e4a);
+        }
+
+        .btn .emoji {
+            font-size: 26px;
+        }
+
+        .btn .label {
+            font-size: 16px;
+        }
+
+        .btn .sub {
+            font-size: 12px;
+            opacity: 0.8;
+            font-weight: 400;
+        }
+
+        /* فوٹر */
+        .footer {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 2px solid #f0e0d8;
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        .footer a {
+            color: #8b5a3c;
+            text-decoration: none;
+        }
+
+        /* موبائل کے لیے */
+        @media (max-width: 500px) {
+            .products {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .product-card .icon {
+                font-size: 36px;
+            }
+
+            .btn {
+                font-size: 15px;
+                padding: 14px 16px;
+            }
+
+            .header h1 {
+                font-size: 22px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .products {
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .product-card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- ہیڈر -->
+        <div class="header">
+            <h1>👜 Nisha's Collection</h1>
+            <p>✨ ہاتھ سے بنے بیگز اور خوبصورت جیولری ✨</p>
+        </div>
+
+        <!-- پروڈکٹس -->
+        <div class="products">
+            <div class="product-card">
+                <span class="icon">👜</span>
+                <h3>لیدر بیگ</h3>
+                <span class="price">Rs. 2,500</span>
+            </div>
+            <div class="product-card">
+                <span class="icon">👛</span>
+                <h3>کاسمیٹک بیگ</h3>
+                <span class="price">Rs. 1,800</span>
+            </div>
+            <div class="product-card">
+                <span class="icon">💎</span>
+                <h3>چاندی کی بالیاں</h3>
+                <span class="price">Rs. 1,200</span>
+            </div>
+            <div class="product-card">
+                <span class="icon">📿</span>
+                <h3>موتیوں کا سیٹ</h3>
+                <span class="price">Rs. 3,000</span>
+            </div>
+        </div>
+
+        <!-- بٹنز -->
+        <div class="buttons">
+
+            <!-- EasyPaisa بٹن -->
+            <a href="https://easypaisa.com.pk/" target="_blank" class="btn btn-easypaisa">
+                <span class="emoji">🏦</span>
+                <span>
+                    <span class="label">EasyPaisa اکاؤنٹ</span><br>
+                    <span class="sub">0332 1662854</span>
+                </span>
+            </a>
+
+            <!-- WhatsApp بٹن -->
+            <a href="https://wa.me/923141235838?text=مجھے%20آپ%20کی%20پروڈکٹس%20میں%20دلچسپی%20ہے" 
+               target="_blank" 
+               class="btn btn-whatsapp">
+                <span class="emoji">💬</span>
+                <span>
+                    <span class="label">WhatsApp پر میسج کریں</span><br>
+                    <span class="sub">0314 1235838</span>
+                </span>
+            </a>
+
+        </div>
+
+        <!-- فوٹر -->
+        <div class="footer">
+            <p>📦 پورے پاکستان میں ڈیلیوری 🚚</p>
+            <p style="margin-top:5px; font-size:12px;">
+                <a href="#">پہلے اپنے اکاؤنٹ میں لاگ ان ہوں</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
